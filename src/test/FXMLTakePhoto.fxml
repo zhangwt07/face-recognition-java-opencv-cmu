@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLTakePhotoController">
+   <children>
+      <Label layoutX="42.0" layoutY="23.0" text="Please look at the camera and move to center!" />
+      <ImageView fx:id="imgPhoto" disable="true" fitHeight="256.0" fitWidth="414.0" layoutX="72.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+          <ImageView fx:id="imgFemale" disable="true" fitHeight="256.0" fitWidth="414.0" layoutX="172.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/CMUA%2017fall/95712%20OOP%20Java/GroupProj/Resources/female.png" />
+         </image></ImageView>
+      <ImageView fx:id="imgMale" disable="true" fitHeight="256.0" fitWidth="256.0" layoutX="175.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/CMUA%2017fall/95712%20OOP%20Java/GroupProj/Resources/male.png" />
+         </image></ImageView>
+      <Button fx:id="btnCamera" layoutX="152.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Camera" />
+      <Button fx:id="btnTake" layoutX="256.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Take Photo" />
+      <Button fx:id="btnConfirm" disable="true" layoutX="376.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Confirm" />
+   </children>
+</AnchorPane>

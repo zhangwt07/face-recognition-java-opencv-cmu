@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="644.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLReportController">
+   <children>
+      <Label layoutX="48.0" layoutY="61.0" text="Start Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="102.0" text="End Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="534.0" layoutY="585.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGenerate1" layoutX="327.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dateStart" layoutX="127.0" layoutY="57.0" promptText="10-20-2017" />
+      <DatePicker fx:id="dateEnd" layoutX="127.0" layoutY="100.0" promptText="10-30-2017" />
+      <Label layoutX="50.0" layoutY="177.0" text="Report on category" />
+      <Label layoutX="48.0" layoutY="217.0" prefHeight="45.0" prefWidth="268.0" text="Report on frequency, gender and category" />
+      <Button fx:id="btnGenerate2" layoutX="327.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblWarning" layoutX="48.0" layoutY="143.0" />
+      <Label fx:id="lblReport1" layoutX="48.0" layoutY="199.0" />
+      <Label fx:id="lblReport2" layoutX="48.0" layoutY="254.0" />
+      <BarChart fx:id="chart" layoutX="22.0" layoutY="263.0" prefHeight="254.0" prefWidth="545.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="btnChart" layoutX="442.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Chart" />
+   </children>
+</AnchorPane>

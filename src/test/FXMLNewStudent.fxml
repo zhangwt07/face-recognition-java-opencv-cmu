@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLNewStudentController">
+   <children>
+      <Label layoutX="61.0" layoutY="70.0" text="Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="235.0" text="Reason:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="259.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConfirm" layoutX="349.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Confirm">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="chboxReason" layoutX="168.0" layoutY="233.0" prefWidth="150.0" />
+      <Label fx:id="lblWarning" layoutX="61.0" layoutY="216.0" />
+      <Label fx:id="lblName" layoutX="171.0" layoutY="73.0" />
+      <Label fx:id="lblAndrew" layoutX="171.0" layoutY="113.0" />
+      <Label layoutX="61.0" layoutY="143.0" text="If this is not the person, please enter Andrew ID:">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="170.0" text="Correct Andrew ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAndrew" layoutX="163.0" layoutY="188.0" promptText="eg weitongz" />
+   </children>
+</AnchorPane>

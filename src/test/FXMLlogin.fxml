@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="test.FXMLloginController">
+   <children>
+      <ImageView fx:id="background" fitHeight="450.0" fitWidth="800.0">
+         <image>
+            <Image url="@../../../../Desktop/Codes/95712/Face_Recognition_System-master/teamProj/src/teamproj/images/bg3.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="89.0" layoutY="114.0" prefHeight="243.0" prefWidth="436.0">
+         <children>
+            <Label text="Login" textFill="#4d4949">
+               <font>
+                  <Font name="AdobeFangsongStd-Regular" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="85.0" text="Username:" />
+            <Label layoutX="65.0" layoutY="123.0" text="Password:" />
+            <TextField fx:id="txtUsername" layoutX="142.0" layoutY="80.0" onInputMethodTextChanged="#handleButtonAction" promptText="admin" />
+            <TextField fx:id="txtPassword" layoutX="142.0" layoutY="118.0" onInputMethodTextChanged="#handleButtonAction" promptText="admin" />
+            <Button fx:id="btnLogin" layoutX="142.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Log in" />
+            <Button fx:id="btnExitSystem" layoutX="236.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonAction" text="  Exit   " />
+            <Label fx:id="labelWrongLogin" layoutX="142.0" layoutY="60.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

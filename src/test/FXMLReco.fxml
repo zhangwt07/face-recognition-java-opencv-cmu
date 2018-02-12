@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLRecoController">
+   <children>
+      <ImageView fx:id="background" fitHeight="675.0" fitWidth="1200.0" layoutY="0.0">
+         <image>
+            <Image url="@../../../../Desktop/Codes/95712/Face_Recognition_System-master/teamProj/src/teamproj/images/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="42.0" layoutY="25.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="imgCmu" fitHeight="530.0" fitWidth="900.0" layoutX="-10.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../../Desktop/Codes/95712/Face_Recognition_System-master/teamProj/src/teamproj/images/cmulogoshadow.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnStartCamera" layoutX="35.0" layoutY="567.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="159.0" text="Start Camera">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRecord" layoutX="238.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="128.0" text="Record">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReport" layoutX="581.0" layoutY="567.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="108.0" text="Report">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogout" layoutX="749.0" layoutY="567.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="128.0" text="Log Out" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="btnAdd" layoutX="416.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="119.0" text="Add New">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="912.0" layoutY="-39.0" prefHeight="835.0" prefWidth="307.0">
+         <children>
+            <AnchorPane layoutX="-7.0" layoutY="28.0" prefHeight="270.0" prefWidth="307.0">
+               <children>
+                  <ImageView fx:id="imgSeal" fitHeight="265.0" fitWidth="279.0" layoutX="19.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../../../../Desktop/Codes/95712/Face_Recognition_System-master/teamProj/src/teamproj/images/cmutransseal.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TitledPane fx:id="txtInfo" layoutX="23.0" layoutY="296.0" prefHeight="400.0" prefWidth="250.0" text="Student Info ">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="lblNumberFaces" text="Number of faces in camera:" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="187.0" prefWidth="113.0">
+                                 <children>
+                                    <Label text="Name:" />
+                                    <Label />
+                                    <Label text="Gender:" />
+                                    <Label />
+                                    <Label text="Program:" />
+                                    <Label />
+                                    <Label text="Age:" />
+                                    <Label />
+                                    <Label text="Last visit:" />
+                                    <Label />
+                                    <Label text="Last visit reason:" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="352.0" prefWidth="128.0">
+                                 <children>
+                                    <Label fx:id="lblName" />
+                                    <Label />
+                                    <Label fx:id="lblGender" />
+                                    <Label />
+                                    <Label fx:id="lblProgram" />
+                                    <Label />
+                                    <Label fx:id="lblAge" />
+                                    <Label />
+                                    <Label fx:id="lblVisitTime" />
+                                    <Label />
+                                    <Label fx:id="lblReason" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content></TitledPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXMLAddController">
+   <children>
+      <Button fx:id="btnCancel" layoutX="163.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cancel" />
+      <Button fx:id="btnConfirm" layoutX="246.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Confirm and take photo" />
+      <VBox layoutX="26.0" layoutY="34.0" prefHeight="194.0" prefWidth="383.0">
+         <children>
+            <Label text="Name:" />
+            <TextField fx:id="txtName" promptText="eg Weitong Zhang" />
+            <Label text="Andrew ID:" />
+            <TextField fx:id="txtAndrew" promptText="eg weitongz" />
+            <Label text="Age:" />
+            <TextField fx:id="txtAge" promptText="eg 22" />
+            <Label text="Gender:" />
+            <ChoiceBox fx:id="chboxGender" prefWidth="150.0" />
+            <Label text="Program:" />
+            <ChoiceBox fx:id="chboxProgram" prefWidth="150.0" />
+            <Label text="Visit Reason:" />
+            <ChoiceBox fx:id="chboxReason" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <Label fx:id="lblWarning" layoutX="26.0" layoutY="347.0" />
+   </children>
+</AnchorPane>
