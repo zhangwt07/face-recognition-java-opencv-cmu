@@ -1,6 +1,6 @@
 # face-recognition-java-opencv-cmu
-*This is an academic project @cmu.*
-  ## Overview 
+*This is an academic project @cmu.*  
+## Overview   
   The face recognition project implemented the OpenCV libraries to realize the features of:
   1. Login page
   As this is for school administration for collecting data of students' visits and queries, it is of importance that the application is protected by login process and only the desired people could have access to it.
